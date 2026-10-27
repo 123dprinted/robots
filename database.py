@@ -40,6 +40,7 @@ def commit():
 
 
 def close():
+    db.commit()
     db.close()
     print("Successfully closed db.")
 
